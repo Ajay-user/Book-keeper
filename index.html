@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Book-keeper</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- adds a new bookmark -->
+      <h1 class="show-modal" id="show-modal">Add Bookmark</h1>
+      <!-- display all bookmark -->
+      <div class="bookmark-container" id="bookmark-container">
+        <!-- <div class="item">
+          <a href="https://www.google.com/">Google</a>
+          <i class="far fa-times-circle" id="remove-bookmark"></i>
+        </div> -->
+      </div>
+      <!-- bookmark form -->
+      <div class="bookmark-form-container" id="bookmark-form-container">
+        <div class="modal">
+          <div class="modal-header">
+            <h3 class="modal-title">Add a new bookmark</h3>
+            <i class="far fa-window-close" id="close-modal"></i>
+          </div>
+          <div class="modal-content">
+            <form id="bookmark-form">
+              <div class="form-group">
+                <label for="website-name">Website Name</label>
+                <input
+                  type="text"
+                  name="websiteName"
+                  id="website-name"
+                  placeholder="Google"
+                />
+              </div>
+              <div class="form-group">
+                <label for="website-url">Website Url</label>
+                <input
+                  type="text"
+                  name="websiteUrl"
+                  id="website-url"
+                  placeholder="https://www.google.com/"
+                />
+              </div>
+              <div class="form-group">
+                <button id="submit-form" type="submit">SAVE</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
